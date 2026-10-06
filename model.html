@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榜样力量</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+            font-family: "KaiTi", "楷体", "SimSun", serif;
+            background-color: #580f0f;
+            color: #332222;
+            line-height: 1.8;
+        }
+        nav {
+            background-color: #3f0b0b;
+            border-top: 1px solid #801c1c;
+            border-bottom: 1px solid #801c1c;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav-wrap a {
+            color: #f3eada;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+            transition: color 0.3s;
+        }
+        .nav-wrap a:hover {
+            color: #ffd766;
+        }
+        .container{
+            max-width:1200px;
+            margin:40px auto;
+            padding:0 24px;
+        }
+        .section-title{
+            text-align:center;
+            font-size:28px;
+            color:#fff;
+            margin-bottom:30px;
+        }
+        .card-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .person-card {
+            background: #f7f4ec;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #d6bc8c66;
+        }
+        .img-placeholder {
+            width: 100%;
+            height: 170px;
+            background-color: #c8b89c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5a442d;
+            font-size: 16px;
+        }
+        .person-card .text-wrap {
+            padding: 18px;
+        }
+        .person-card h3 {
+            color: #701414;
+            margin-bottom: 8px;
+        }
+        @media (max-width: 900px) {
+            .card-group {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 560px) {
+            .card-group {
+                grid-template-columns: 1fr;
+            }
+            .nav-wrap a {
+                padding: 10px 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">首页</a>
+            <a href="red.html">红色溯源</a>
+            <a href="model.html">榜样力量</a>
+            <a href="youth.html">青年担当</a>
+            <a href="action.html">青年行动指南</a>
+            <a href="research.html">关于本研究</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="section-title">榜样力量｜追寻先辈与时代楷模的足迹</h2>
+        <div class="card-group">
+            <div class="person-card">
+                <img src="image/lidazhao.jpg" style="width:100%;height:170px;object-fit:cover;" alt="李大钊">
+                <div class="text-wrap">
+                    <h3>李大钊</h3>
+                    <p>革命先驱，传播马克思主义，为理想信念英勇献身，点燃近代中国思想觉醒的火种。</p>
+                </div>
+            </div>
+            <div class="person-card">
+                <img src="image/zhaoyiman.jpg" style="width:100%;height:170px;object-fit:cover;" alt="赵一曼">
+                <div class="text-wrap">
+                    <h3>赵一曼</h3>
+                    <p>抗日民族英雄，面对酷刑坚贞不屈，用生命捍卫民族尊严，诠释家国大义。</p>
+                </div>
+            </div>
+            <div class="person-card">
+                <img src="image/jiaoyulu.jpg" style="width:100%;height:170px;object-fit:cover;" alt="焦裕禄">
+                <div class="text-wrap">
+                    <h3>焦裕禄</h3>
+                    <p>人民好干部，扎根兰考治理风沙，一心为民无私奉献，诠释建设时期的爱国担当。</p>
+                </div>
+            </div>
+            <div class="person-card">
+                <img src="image/qianxuesen.jpg" style="width:100%;height:170px;object-fit:cover;" alt="钱学森">
+                <div class="text-wrap">
+                    <h3>钱学森</h3>
+                    <p>归国科学家，放弃国外优渥条件毅然回国，投身“两弹一星”事业，筑牢国家国防根基。</p>
+                </div>
+            </div>
+            <div class="person-card">
+                <img src="image/zhangguimei.jpg" style="width:100%;height:170px;object-fit:cover;" alt="张桂梅">
+                <div class="text-wrap">
+                    <h3>张桂梅</h3>
+                    <p>时代楷模，扎根山区教育，助力上千名山区女孩圆梦大学，以教育报国坚守初心。</p>
+                </div>
+            </div>
+            <div class="person-card">
+                <img src="image/chenxiangrong.jpg" style="width:100%;height:170px;object-fit:cover;" alt="陈祥榕">
+                <div class="text-wrap">
+                    <h3>陈祥榕</h3>
+                    <p>戍边英雄，清澈的爱，只为中国，用青春与生命守护祖国边境安宁。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

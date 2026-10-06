@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青年担当</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        html, body {
+            font-family: "KaiTi", "楷体", SimSun, serif;
+            background-color: #580f0f;
+            color: #332222;
+            line-height: 1.8;
+        }
+        nav {
+            background-color: #3f0b0b;
+            border-top: 1px solid #801c1c;
+            border-bottom: 1px solid #801c1c;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav-wrap a {
+            color: #f3eada;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+            transition: color 0.3s;
+        }
+        .nav-wrap a:hover {
+            color: #ffd766;
+        }
+        .container{
+            max-width:1200px;
+            margin:40px auto;
+            padding:0 24px;
+        }
+        .section-title{
+            text-align:center;
+            font-size:28px;
+            color:#fff;
+            margin-bottom:30px;
+        }
+        .top-img{
+            width:100%;
+            border-radius:12px;
+            object-fit:cover;
+            margin-bottom:24px;
+        }
+        .text-block{
+            background:#f7f4ec;
+            padding:24px;
+            border-radius:12px;
+            border:1px solid #d6bc8c66;
+            margin-bottom:30px;
+        }
+        .text-block p{
+            margin-bottom:16px;
+            font-size:16px;
+        }
+        .text-block p:last-child{
+            margin-bottom:0;
+        }
+        .four-card-title{
+            color:#fff;
+            font-size:22px;
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .four-card-group{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+            margin-bottom:30px;
+        }
+        .mini-card{
+            background:#f7f4ec;
+            padding:20px;
+            border-radius:12px;
+            border:1px solid #d6bc8c66;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .mini-card:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+        }
+        .mini-card h4{
+            color:#701414;
+            margin-bottom:10px;
+            font-size:18px;
+        }
+        .tip-box{
+            background:#f7f4ec;
+            padding:24px;
+            border-radius:12px;
+            border:1px solid #d6bc8c66;
+            margin-bottom:30px;
+        }
+        .tip-box h4{
+            color:#701414;
+            margin-bottom:12px;
+            font-size:20px;
+        }
+        .quote-text{
+            color:#fff;
+            font-size:20px;
+            text-align:center;
+            padding:20px;
+            font-weight:bold;
+        }
+        @media (max-width: 900px) {
+            .four-card-group{
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 560px) {
+            .nav-wrap a {
+                padding: 10px 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">首页</a>
+            <a href="red.html">红色溯源</a>
+            <a href="model.html">榜样力量</a>
+            <a href="youth_duty.html">青年担当</a>
+            <a href="action.html">青年行动指南</a>
+            <a href="research.html">关于本研究</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="section-title">青年担当｜新时代大学生的家国责任</h2>
+
+        <img class="top-img" src="image/dandang.jpg" alt="青年担当">
+
+        <div class="text-block">
+            <p>爱国主义不是遥远宏大的口号，是新时代青年刻在心底的信仰。新时代的青年爱国，首先要坚定理想信念，树立正确历史观，读懂党和国家奋斗历史，坚定道路自信、理论自信、制度自信、文化自信。</p>
+            <p>作为大学生，爱国体现在树立大局意识，自觉维护国家尊严、民族团结与祖国领土完整，理性看待国内外各类社会舆论，明辨是非，抵制错误思潮。</p>
+            <p>爱国也体现在个人成长之中：把个人理想追求融入国家和民族事业当中。我们不必人人做出惊天动地的伟业，但应当确立报国志向，打磨自身本领。无论是深耕专业科研、投身基层建设、服务社会大众，还是在平凡岗位踏实奋斗，都是青年担当的体现。</p>
+            <p>生逢中华民族伟大复兴的时代，当代青年与祖国同向同行，既要心怀家国，也要脚踏实地，把满腔爱国热情转化为成长成才的内生动力。</p>
+        </div>
+
+        <h3 class="four-card-title">新时代青年爱国的四重内涵</h3>
+        <div class="four-card-group">
+            <div class="mini-card">
+                <h4>🇨🇳信仰之爱</h4>
+                <p>厚植理想信念，读懂党史国史，坚定“四个自信”，认同国家发展道路。</p>
+            </div>
+            <div class="mini-card">
+                <h4>🤝团结之爱</h4>
+                <p>维护民族团结，捍卫祖国统一，尊重多元，守护国家共同利益。</p>
+            </div>
+            <div class="mini-card">
+                <h4>📚实干之爱</h4>
+                <p>立足专业勤学苦练，练就过硬本领，把个人前途和民族命运相连。</p>
+            </div>
+            <div class="mini-card">
+                <h4>🧠理性之爱</h4>
+                <p>保持独立思考，拒绝偏激冲动，明辨网络谣言，做到理智爱国。</p>
+            </div>
+        </div>
+
+        <div class="tip-box">
+            <h4>📌澄清：爱国不等于形式化的口号</h4>
+            <p>真正的爱国主义，不是网络上的极端宣泄，不是流于表面的形式表态。爱国藏在认真学习的书桌前，藏在尊重团结他人的相处中，藏在客观理性看待世界的眼光里。爱国是内化于心的认同，更是外化于行的坚守。</p>
+        </div>
+
+        <div class="quote-text">
+            “青年强，则国家强。当代中国青年生逢其时，施展才干的舞台无比广阔，实现梦想的前景无比光明。”
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赤心 - 青年行动指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+            font-family: "KaiTi", "楷体", "SimSun", serif;
+            background-color: #580f0f;
+            color: #332222;
+            line-height: 1.8;
+        }
+        nav {
+            background-color: #3f0b0b;
+            border-top: 1px solid #801c1c;
+            border-bottom: 1px solid #801c1c;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav-wrap a {
+            color: #f3eada;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+            transition: color 0.3s;
+        }
+        .nav-wrap a:hover {
+            color: #ffd766;
+        }
+        .container{
+            max-width:1200px;
+            margin:40px auto;
+            padding:0 24px;
+        }
+        .section-title{
+            text-align:center;
+            font-size:28px;
+            color:#fff;
+            margin-bottom:30px;
+        }
+        .intro-box {
+            background:#f7f4ec;
+            padding:22px;
+            border-radius:12px;
+            margin:20px 0;
+            border:1px solid #d6bc8c66;
+        }
+        .intro-img-place{
+            width:100%;
+            height:180px;
+            background-color:#c8b89c;
+            border-radius:8px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#5a442d;
+            margin-bottom:14px;
+        }
+        .card-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .card {
+            background: #f7f4ec;
+            padding:20px;
+            border-radius: 12px;
+            border: 1px solid #d6bc8c66;
+        }
+        .img-placeholder {
+            width: 100%;
+            height: 170px;
+            background-color: #c8b89c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5a442d;
+            font-size: 16px;
+            border-radius:8px;
+            margin-bottom:14px;
+        }
+        .card h3 {
+            color: #701414;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+        .card p {
+            font-size: 16px;
+        }
+        @media (max-width: 900px) {
+            .card-group {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 560px) {
+            .card-group {
+                grid-template-columns: 1fr;
+            }
+            .nav-wrap a {
+                padding: 10px 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">首页</a>
+            <a href="red.html">红色溯源</a>
+            <a href="model.html">榜样力量</a>
+            <a href="youth.html">青年担当</a>
+            <a href="action.html">青年行动指南</a>
+            <a href="research.html">关于本研究</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="section-title">青年行动指南｜爱国，我们可以做什么？</h2>
+        <div class="intro-box">
+            <img src="image/lishi.jpg" style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:14px;" alt="引言配图">
+            <p>我们读懂历史故事，感悟榜样精神，懂得了爱国主义的内涵。不少同学会有疑问：爱国不只是口号，作为普通大学生，在日常学习生活里我们究竟可以怎样践行爱国精神？爱国主义体现在点滴行动当中，我们可以从课堂、校园、社会实践三个方面做起。</p>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="image/ke.jpg" style="width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:14px;" alt="课堂汲取力量">
+                <h3>📖在课堂中汲取力量</h3>
+                <p>认真上好思政课程，主动学习党史、新中国发展史。在专业学习中树立报国理想，把个人学业成长和国家发展联系在一起，夯实思想根基。</p>
+            </div>
+            <div class="card">
+                <img src="image/qinghuai.jpg" style="width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:14px;" alt="校园涵养情怀">
+                <h3>🎭在校园中涵养情怀</h3>
+                <p>积极参与学校主题团日、红色纪念活动、主题宣讲等校园文化活动。在仪式与集体活动当中厚植家国情感，树立民族自豪感。</p>
+            </div>
+            <div class="card">
+                <img src="image/shijian.jpg" style="width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:14px;" alt="社会躬身实践">
+                <h3>🚩在社会中躬身实践</h3>
+                <p>利用课余时间走进红色教育基地参观学习，参加志愿服务、社会调研等实践活动。走出书本，亲身感受祖国的发展变化，把爱国想法转化为实实在在的行动。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

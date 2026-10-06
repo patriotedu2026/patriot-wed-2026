@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赤心 - 首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+            font-family: "KaiTi", "楷体", "SimSun", serif;
+            background-color: #580f0f;
+            color: #332222;
+            line-height: 1.8;
+        }
+        /* Banner 顶部封面 */
+        .banner {
+            width: 100%;
+            min-height: 320px;
+            background: linear-gradient(rgba(55, 7, 7, 0.78), rgba(55, 7, 7, 0.86)),
+                        url("image/banner.jpg") center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .banner h1 {
+            font-size: 42px;
+            color: #ffffff;
+            font-weight: normal;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+        }
+        .banner .sub-title {
+            font-size: 20px;
+            color: #f0d890;
+            margin-bottom: 12px;
+        }
+        .banner .tip-text {
+            font-size: 16px;
+            color: #f7f2e4;
+        }
+        /* 导航栏 */
+        nav {
+            background-color: #3f0b0b;
+            border-top: 1px solid #801c1c;
+            border-bottom: 1px solid #801c1c;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav-wrap a {
+            color: #f3eada;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+            transition: color 0.3s;
+        }
+        .nav-wrap a:hover {
+            color: #ffd766;
+        }
+        .container{
+            max-width:1200px;
+            margin:40px auto;
+            padding:0 24px;
+        }
+        /* 首页介绍板块 */
+        .intro-block{
+            background:#f7f4ec;
+            border-radius:14px;
+            padding:32px;
+            margin-bottom:40px;
+            border:1px solid #d6bc8c66;
+        }
+        .intro-block h2{
+            color:#701414;
+            text-align:center;
+            margin-bottom:16px;
+        }
+        .value-block{
+            background:#f7f4ec;
+            border-radius:14px;
+            padding:32px;
+            margin-bottom:40px;
+            border:1px solid #d6bc8c66;
+        }
+        .value-block h2{
+            color:#701414;
+            text-align:center;
+            margin-bottom:16px;
+        }
+        /* 首页：横向板块入口卡片 */
+        .home-card-wrap{
+            display:grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap:24px;
+        }
+        .home-card{
+            background: #f7f4ec;
+            padding:24px;
+            border-radius:12px;
+            border:1px solid #d6bc8c66;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+            cursor:pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align:center;
+            text-decoration:none;
+            color:#332222;
+        }
+        .home-card:hover{
+            transform: translateY(-6px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.18);
+        }
+        .home-card h3{
+            color:#701414;
+            margin-bottom:10px;
+        }
+        /* 移动端适配 */
+        @media (max-width: 900px) {
+            .home-card-wrap{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 560px) {
+            .home-card-wrap{
+                grid-template-columns: 1fr;
+            }
+            .banner h1 {
+                font-size: 30px;
+            }
+            .nav-wrap a {
+                padding: 10px 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 首页Banner -->
+    <div class="banner">
+        <h1>赤心</h1>
+        <div class="sub-title">新时代大学生爱国主义科普平台</div>
+        <div class="tip-text">学习《中华人民共和国爱国主义教育法》，弘扬新时代爱国主义精神</div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">首页</a>
+            <a href="red.html">红色溯源</a>
+            <a href="model.html">榜样力量</a>
+            <a href="youth.html">青年担当</a>
+            <a href="action.html">青年行动指南</a>
+            <a href="research.html">关于本研究</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 网站介绍板块 -->
+        <section class="intro-block">
+            <h2>平台介绍</h2>
+            <p>本网站是《大学生爱国主义教育效能评价体系构建与实践研究》课题的数字化科普载体，面向当代大学生打造线上爱国主义学习平台。平台依托《中华人民共和国爱国主义教育法》，以通俗易懂的科普形式传播爱国主义知识、红色故事与时代楷模事迹，打破传统课堂的限制，为青年提供随时随地可访问的红色学习资源。</p>
+            <p style="margin-top:12px;">网站坚持理论与实践结合，不只讲解理论知识，同时引导大学生把爱国情怀转化为日常行动，帮助青年树立正确的历史观、民族观、国家观、文化观。</p>
+        </section>
+
+        <!-- 科普意义板块 -->
+        <section class="value-block">
+            <h2>平台科普意义</h2>
+            <p>在网络信息多元复杂的时代，搭建大学生线上爱国主义科普阵地，是新时代思政教育的创新尝试。平台以图文形式讲述红色历史、榜样故事，降低红色理论学习门槛，让爱国主义教育更年轻化、可视化。</p>
+            <p style="margin-top:12px;">通过学习，引导青年读懂百年奋斗历程，感悟榜样精神，明晰当代大学生的时代责任，鼓励同学们立足专业、脚踏实地，将个人理想融入民族复兴伟大事业，实现润物无声的思政科普效果。</p>
+        </section>
+
+        <!-- 横向5个入口卡片 -->
+        <div class="home-card-wrap">
+            <a class="home-card" href="red.html">
+                <h3>红色溯源</h3>
+                <p>了解新时代爱国主义内涵与法律要点</p>
+            </a>
+            <a class="home-card" href="model.html">
+                <h3>榜样力量</h3>
+                <p>追寻先辈与时代楷模的足迹</p>
+            </a>
+            <a class="home-card" href="youth.html">
+                <h3>青年担当</h3>
+                <p>读懂新时代大学生的家国责任</p>
+            </a>
+            <a class="home-card" href="action.html">
+                <h3>青年行动指南</h3>
+                <p>看看爱国，我们可以做什么？</p>
+            </a>
+            <a class="home-card" href="research.html">
+                <h3>关于本研究</h3>
+                <p>课题相关说明</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
